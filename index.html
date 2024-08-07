@@ -1,0 +1,130 @@
+<!-- 👋 Hi, I’m @AliAr78
+👀 I’m interested in Front end development
+🌱 I’m currently learning Js and React
+💞️ I’m looking to collaborate on Web applications and Front end development
+📫 How to reach me: ali.a.r.frontdev@gmail.com -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/time and season.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="Todostyles.css">
+  <link rel="stylesheet" href="style.css">
+  <link id="season-stylesheet" rel="stylesheet" href="">
+</head>
+<body>
+  <div id="weather">
+    <img id="weather-icon" src="" alt="Weather Icon">
+    <div id="weather-description">Loading weather...</div>
+  </div>
+  <button class="top-right-button">
+    <span><img class="spanImg" src="assets/images/icon-moon.svg" alt=""></span>
+  </button>
+
+  <button class="settingBtn">
+    <span><img class="spanImg" src="assets/icons/settingWhite.png" alt="setting"></span>
+  </button>
+
+  <div id="search-bar">
+    <form action="https://www.google.com/search" method="get">
+      <img id="googleIMG" src="new_img/google.png" alt="Google">
+      <input id="bar" type="text" name="q" placeholder="Search">
+    </form>
+    <div class="gcse-search"></div>
+    <div id="suggestions" class="suggestions-box"></div>
+  </div>
+  <div id="father">
+    <h1 id="TEXT">TIME</h1>
+    <div id="year" class="timers"></div>
+    <div id="hour" class="timers"></div>
+    <p class="DubelDot">:</p>
+    <div id="minute" class="timers"></div>
+    <p class="DubelDot">:</p>
+    <div id="second" class="timers"></div>
+    <p class="DubelDot">:</p>
+    <div id="PM_AM" class="timers"></div>
+    <div id="day" class="timers"></div>
+  </div>
+  <div id="left-tabs" class="tabs-container">
+    <a class="tab" id="add-tab">
+      <img id="addTabImg" src="assets/images/plus-Black.png" alt="Add">
+    </a>
+  </div>
+  
+  
+  
+  
+  
+  <!-- todo.............................................................................................. -->
+  <div class="todo-toggle" id="toggle-btn">
+    <span>&#9776;</span>
+  </div>
+  <div class="todo-container" id="todo-container">
+    <div class="todo-header" id="header">
+      <h1>ToDo's</h1>
+    </div>
+    <div class="todo-content" id="content">
+      <input type="text" id="addt" class="todo-input" placeholder="Add todo ...">
+      <button id="add-btn" class="add-button">+</button>
+      <ul class="todos" id="todo-list"></ul>
+      <button id="clear-completed" class="clear-completed">clear completed todo's</button>
+      <div class="todo-filter" id="filter">
+        <button id="all" class="filter-btn on">All</button>
+        <button id="active" class="filter-btn">Active</button>
+        <button id="completed" class="filter-btn">Completed</button>
+      </div>
+      <p id="items-left" class="items-left">0 ToDo's left</p>
+    </div>
+  </div>
+  <div id="popup-form" class="popup hidden">
+    <div class="popup-content">
+      <h2>Add new tab</h2>
+      <input type="text" id="tab-name" placeholder="Tab name">
+      <input type="text" id="tab-url" placeholder="URL">
+      <button id="add-tab-btn">Add</button>
+      <button id="close-popup-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Popup settings -->
+  <div id="settings-popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Settings</h2>
+      <div>
+        <label style="color:white;margin-top:5px ;" for="snow-toggle">Enable fall:</label>
+        <label class="switch">
+          <input type="checkbox" id="snow-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <hr style="color: black; margin:5px ;">
+      <div>
+        <label style="color:white;margin-top:5px ;" for="bg-toggle">Custom Background:</label>
+        <input type="file" accept="image/jpeg, image/png" id="bg-custom">
+      </div>
+      <button id="remove-bg-btn">Remove Background</button>
+      <hr style="color: black; margin:5px ;">
+      <button id="close-settings-btn">Close</button>
+    </div>
+  </div>
+
+  <script id="todoScript" src="Todoscripts.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+<!-- 👋 Hi, I’m @AliAr78
+👀 I’m interested in Front end development
+🌱 I’m currently learning Js and React
+💞️ I’m looking to collaborate on Web applications and Front end development
+📫 How to reach me: ali.a.r.frontdev@gmail.com -->

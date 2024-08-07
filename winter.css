@@ -1,0 +1,82 @@
+/* 
+👋 Hi, I’m @AliAr78
+👀 I’m interested in Front end development
+🌱 I’m currently learning Js and React
+💞️ I’m looking to collaborate on Web applications and Front end development
+📫 How to reach me: ali.a.r.frontdev@gmail.com
+*/
+
+
+
+/* dark */
+
+body.dark {
+  background-image: url("SeasonImg/Winter/winterDark.png");
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  overflow: hidden; /* delete scroll bar*/
+}
+
+.timers.dark {
+  border: 2px solid #F8EDED;
+  color: #F8EDED;
+}
+
+#TEXT.dark {
+  border: 2px solid #F8EDED;
+  color: #F8EDED;
+}
+
+.tab.dark {
+  background-color: rgba(0, 0, 128, 0.5);
+  color: #F8EDED;
+}
+
+#weather.dark {
+  background-color: rgba(0, 0, 128, 0.2);
+}
+
+body {
+  background-image: url("SeasonImg/Winter/winter.png");
+  background-size: 100% 800px;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  overflow: hidden; /* delete scroll bar*/
+}
+
+.timers {
+  border: 2px solid #000080;
+  color: #000080;
+}
+
+#TEXT {
+  border: 2px solid #000080;
+  color: #000080;
+}
+
+.tab {
+  background-color: rgba(0, 0, 128, 0.5);
+  color: #000080;
+}
+
+#weather {
+  background-color: rgba(0, 0, 128, 0.2);
+}
+
+
+
+#search-bar ::placeholder {
+  color: #7a7afd;
+  opacity: 80%;
+  direction: ltr;
+}
+
+
+
+/* 
+👋 Hi, I’m @AliAr78
+👀 I’m interested in Front end development
+🌱 I’m currently learning Js and React
+💞️ I’m looking to collaborate on Web applications and Front end development
+📫 How to reach me: ali.a.r.frontdev@gmail.com
+*/

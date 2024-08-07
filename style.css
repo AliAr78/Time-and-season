@@ -1,0 +1,583 @@
+/* 
+👋 Hi, I’m @AliAr78
+👀 I’m interested in Front end development
+🌱 I’m currently learning Js and React
+💞️ I’m looking to collaborate on Web applications and Front end development
+📫 How to reach me: ali.a.r.frontdev@gmail.com
+*/
+
+
+
+
+/* Remove padding and margin for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  direction: ltr;
+}
+
+/* Dark mode */
+
+.timers.dark {
+  border: 2px solid white;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 5px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  backdrop-filter: blur(7px);
+  margin-top: 30px;
+  font-size: 28px;
+}
+
+#TEXT.dark {
+  color: white;
+}
+
+.tab.dark {
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  max-width: 200px; /* Maximum width for tab */
+  word-break: break-word; /* Break words */
+  white-space: normal; /* Display multiple lines */
+  overflow-wrap: break-word; /* Break words */
+}
+
+#weather.dark {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+#search-bar input.dark[type="text"] {
+  background-color: #0057b300;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: 0px;
+  border-bottom: red 0.5px solid;
+  width: 250px; /* Search bar width */
+  outline: none; /* Remove border on focus */
+  transition: border-color 0.3s ease; /* Animation for border color change */
+  direction: ltr;
+}
+
+#search-bar input.dark[type="text"]:focus {
+  border-bottom: rgb(31, 31, 31) 0.5px solid;
+  direction: ltr;
+}
+
+/* End of dark mode */
+
+@keyframes fall {
+  from {
+    transform: translateY(-100px); /* Start from above */
+  }
+  to {
+    transform: translateY(100vh); /* Fall to bottom */
+  }
+}
+
+/* Body settings */
+
+/* Settings for snowflakes */
+.snowflake {
+  position: absolute;
+  width: 20px; /* Set leaf size */
+  height: 20px; /* Set leaf size */
+  background: url('SeasonImg/leafs/snowflake.png') no-repeat center center; /* Set leaf image as background */
+  background-size: contain; /* Set image size */
+  animation: fall linear infinite;
+  z-index: 1;
+}
+
+/* Settings for the parent section */
+#father {
+  direction: ltr;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 80;
+}
+
+/* Settings for timers */
+.timers {
+  border: 2px solid red;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 5px;
+  padding: 20px;
+  color: rgb(107, 4, 4);
+  font-weight: bold;
+  backdrop-filter: blur(7px);
+  margin-top: 30px;
+  font-size: 28px;
+}
+
+/* Settings for main text */
+#TEXT { border: 2px solid red;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 5px;
+  padding: 20px;
+  color: rgb(107, 4, 4);
+  font-weight: bold;
+  backdrop-filter: blur(7px);
+  margin-top: 30px;
+  font-size: 28px;
+  color: rgb(107, 4, 4);
+}
+
+/* Settings for day and year */
+#day {
+  margin-left: 50px;
+  display: block;
+}
+
+#year {
+  margin-left: 50px;
+  display: block;
+}
+
+/* Settings for AM/PM */
+#PM_AM {
+  font-size: 18px;
+}
+
+/* Settings for double dots */
+.DubelDot {
+  display: inline-block;
+  font-size: 45px;
+}
+
+/* Style for tabs */
+.tabs-container {
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#left-tabs {
+  left: 0;
+}
+
+/* Style for each tab */
+.tab {
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin: 20px 10px 20px 10px;
+  background-color: rgba(0, 0, 0, 0.452);
+  backdrop-filter: blur(7px);
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  max-width: 200px; /* Maximum width for tab */
+  word-break: break-word; /* Break words */
+  white-space: normal; /* Display multiple lines */
+  overflow-wrap: break-word; /* Break words */
+  box-shadow: 1px 1px 1px 5px rgba(0, 0, 0, 0.486);
+}
+
+.tab img {
+  width: 100px;
+  width: 45px;
+  border-radius: 5px;
+}
+
+.tab:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style for "+" tab */
+#add-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.452);
+  backdrop-filter: blur(7px);
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#add-tab img {
+  width: 45px;
+  z-index: 1000;
+}
+
+a#add-tab:hover {
+  background-color: #e0e0e0;
+}
+
+.delete-tab {
+  position: absolute;
+  top: 2.5px;
+  right: 0;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  opacity: 0%;
+}
+
+#search-bar {
+  text-align: center;
+  margin-top: 30px; /* Distance from other elements */
+  margin-left: 30px;
+  padding: 10px; /* Internal spacing */
+  border-radius: 10px; /* Rounded corners */
+  vertical-align: middle;
+  direction: ltr;
+}
+
+#search-bar form {
+  display: flex;
+  justify-content: center; /* Center the form */
+  align-items: center; /* Center the form vertically */
+  direction: ltr;
+}
+
+#search-bar input[type="text"] {
+  background-color: #0057b300;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: 0px;
+  border-bottom: rgb(31, 31, 31) 0.5px solid;
+  width: 250px; /* Search bar width */
+  outline: none; /* Remove border on focus */
+  transition: border-color 0.3s ease; /* Animation for border color change */
+  direction: ltr;
+}
+
+#search-bar input[type="text"]:focus {
+  border-bottom: red 0.5px solid;
+  direction: ltr;
+}
+
+#search-bar button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px; /* Distance between search bar and button */
+  transition: background-color 0.3s ease; /* Animation for button color change */
+  direction: ltr;
+}
+
+#search-bar button:hover {
+  background-color: #0056b3; /* Button color on hover */
+  direction: ltr;
+}
+
+#search-bar ::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 80%;
+  direction: ltr;
+}
+
+#googleIMG {
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  direction: ltr;
+}
+
+.top-right-button {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.452);
+  backdrop-filter: blur(7px);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 4px 2px;
+  z-index: 99;
+}
+
+/* Style for popup form */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: rgb(107, 4, 4);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items to the center horizontally */
+}
+
+.popup-content h2 {
+  color: white;
+}
+
+.popup-content input {
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  width: 80%; /* Optional: Set a width to inputs for better alignment */
+}
+
+.popup-content input:focus {
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  background-color: #333;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  width: 80%; /* Optional: Maintain the width on focus */
+}
+
+.popup-content button {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding-inline: 30px;
+  cursor: pointer;
+}
+
+.popup-content hr {
+  display: block;
+  width: 100%;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.tab:hover .delete-tab {
+  position: absolute;
+  top: 2.5px;
+  right: 0;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  opacity: 100%;
+}
+
+#weather-icon {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+
+#weather {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.settingBtn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.452);
+  backdrop-filter: blur(7px);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 4px 2px;
+  z-index: 99;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: rgb(107, 4, 4);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+  width: 80%;
+  max-width: 500px;
+}
+
+.popup-content h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.popup-content label {
+  display: block;
+  margin: 10px 0;
+  color: white;
+}
+
+.popup-content input[type="file"] {
+  display: block;
+  margin: 10px 0;
+}
+
+.popup-content input[type="file"]::file-selector-button {
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#bg-preview {
+  margin-top: 10px;
+}
+
+#bg-preview img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+#close-settings-btn {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#close-settings-btn:hover {
+  background-color: #444;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+#remove-bg-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+
+
+/* 
+👋 Hi, I’m @AliAr78
+👀 I’m interested in Front end development
+🌱 I’m currently learning Js and React
+💞️ I’m looking to collaborate on Web applications and Front end development
+📫 How to reach me: ali.a.r.frontdev@gmail.com
+*/

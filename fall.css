@@ -1,0 +1,107 @@
+/* 
+👋 Hi, I’m @AliAr78
+👀 I’m interested in Front end development
+🌱 I’m currently learning Js and React
+💞️ I’m looking to collaborate on Web applications and Front end development
+📫 How to reach me: ali.a.r.frontdev@gmail.com
+*/
+
+
+
+
+/* Dak modd */
+
+body.dark {
+  background-image: url("SeasonImg/fall/fallDark.png");
+  background-position: center 20%;
+  background-size: 100% 800px;
+  background-repeat: no-repeat;
+  overflow: hidden; /* delete scroll bar*/
+}
+
+.timers.dark {
+  border: 2px solid #F3EEEA;
+  color: #F3EEEA;
+}
+
+#TEXT.dark {
+  border: 2px solid #F3EEEA;
+  color: #F3EEEA;
+}
+
+.tab.dark {
+  background-color: rgba(139, 69, 19, 0.5);
+  color: #F3EEEA;
+}
+
+#weather.dark {
+  background-color: rgba(139, 69, 19, 0.2);
+}
+
+
+/* End dark */
+
+
+
+body {
+    background-image: url("SeasonImg/fall/fall.png");
+    background-size: 100% 800px;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+  }
+  
+  .timers {
+    border: 2px solid #8B4513;
+    color: #8B4513;
+  }
+  
+  #TEXT {
+    border: 2px solid #8B4513;
+    color: #8B4513;
+  }
+  
+  .tab {
+    background-color: rgba(139, 69, 19, 0.5);
+    color: #8B4513;
+  }
+  
+  #weather {
+    background-color: rgba(139, 69, 19, 0.2);
+  }
+  
+
+
+  @keyframes fall {
+    0% {
+      top: -10%;
+      opacity: 1;
+      transform: translateY(-100px) rotate(0deg);
+    }
+    100% {
+      top: 110%;
+      opacity: 0.5;
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+
+
+
+  .snowflake {
+ position: absolute;
+  width: 20px; 
+  height: 20px; 
+  background: url('SeasonImg/leafs/autumn\ leaf.png') no-repeat center center;
+  background-size: contain; 
+  animation: fall 1s linear infinite;
+  z-index: 1;
+
+  }
+
+
+  #search-bar ::placeholder {
+    color: #8B4513;
+    opacity: 80%;
+    direction: ltr;
+  }
